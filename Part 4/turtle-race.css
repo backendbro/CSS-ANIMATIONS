@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&family=Solitreo&display=swap');
+
+:root {
+    --color-blue-1:#3554D1;
+    --color-light-1:#697488;
+}
+
+body{
+    font-family: "Jost";
+    background: #333;
+}
+
+.race-env {
+    border-top: 2px solid var(--color-light-1);
+    border-bottom: 2px solid var(--color-light-1);
+    background-color: white;
+    height: 200px;
+}
+
+.race-env .turtle  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: auto;
+    padding: 0 20px;
+
+    position: relative;
+    animation-name: hippoRace;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+
+    /* animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards; */
+}
+
+.race-env .turtle i {
+    font-size: 50px;
+    margin-top: 70px;
+}
+
+@keyframes hippoRace {
+    0%{
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: 300px;
+    }
+
+    50%{
+        margin-left: 600px;
+    }
+
+    75% {
+        margin-left: 900px;
+    }
+
+    100%{
+        margin-left: 1200px;
+    }
+}
+
+
+
